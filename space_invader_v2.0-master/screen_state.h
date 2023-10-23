@@ -9,11 +9,27 @@
 
 class screen_state {
 public:
+    /**
+ * @brief Constructs a screen_state object.
+ *
+ * @param  The state of the screen represented by a string to hold the texture in a location.
+ */
     screen_state(std::string );
 
-
+/**
+ * @brief Resets the window by repositioning the sprite to the default position.
+ */
     void reset_window();
+    /**
+ * @brief Clears the window by repositioning the sprite off-screen.
+ */
     void clear_window();
+
+/**
+ * @brief Draws the screen state on the window.
+ *
+ * @param window The window to draw the screen state on.
+ */
     void draw(sf::RenderWindow &);
 
 private:
